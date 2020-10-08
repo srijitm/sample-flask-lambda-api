@@ -7,7 +7,11 @@ provider:
   region: ca-central-1
   iamRoleStatements:
   - Effect: Allow
-    Action: "s3:*"
+    Action: 
+    - "s3:PutObject"
+    - "s3:Get*"
+    - "s3:Describe*"
+    - "s3:List*"
     Resource: "*"
 
 functions:
