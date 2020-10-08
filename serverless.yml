@@ -13,6 +13,9 @@ provider:
     - "s3:Describe*"
     - "s3:List*"
     Resource: "*"
+  apiGateway:
+    binaryMediaTypes:
+      - '*/*'
 
 functions:
   app:
