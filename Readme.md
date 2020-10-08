@@ -4,7 +4,7 @@ This project demonstrates how a Flask application can be deployed to Lambda with
 
 # Usage
 
-Postman collection is included. Just update the URL to point to your API Gateway endpoint.
+Postman collection is included. Just update the URL to point to your API Gateway endpoint. The sls deploy command output will contain the endpoint.
 
 # Instructions
 
