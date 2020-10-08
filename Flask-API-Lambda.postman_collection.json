@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "3a54f34f-c10a-466a-9359-e6d60b9b60b1",
+		"name": "Flask-API-Lambda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/srijit/Downloads/Photos/IMG_20201006_161956.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ghhqmvz6kk.execute-api.ca-central-1.amazonaws.com/dev/gallery/upload",
+					"protocol": "https",
+					"host": [
+						"ghhqmvz6kk",
+						"execute-api",
+						"ca-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"gallery",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ghhqmvz6kk.execute-api.ca-central-1.amazonaws.com/dev/hello/david",
+					"protocol": "https",
+					"host": [
+						"ghhqmvz6kk",
+						"execute-api",
+						"ca-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"hello",
+						"david"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "IMG_20201006_161956.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ghhqmvz6kk.execute-api.ca-central-1.amazonaws.com/dev/gallery/download",
+					"protocol": "https",
+					"host": [
+						"ghhqmvz6kk",
+						"execute-api",
+						"ca-central-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"gallery",
+						"download"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
