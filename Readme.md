@@ -20,6 +20,11 @@ npm install -g serverless
 npm install serverless-wsgi serverless-python-requirements --save-dev
 ```
 
+- Update app.py (line 7) to point to an existing S3 bucket 
+```py
+bucket = 'my-playpen'
+```
+
 - Deploy (from root dir)
 
 ```bash
