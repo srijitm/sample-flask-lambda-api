@@ -1,14 +1,15 @@
+# Sample Flask Fargate API
 **Note: This is not Production grade and simply meant as a demo**
 
-# Description
+## Description
 
 This project demonstrates how a Flask application can be deployed to Lambda without re-writing. An API Gateway sits infront and simply routes all requests to the Lambda function. The Lambda function itself uses the routes (as defined in Flask). This application provides endpoints to upload/download an image (jpeg) to/from S3.
 
-# Usage
+## Usage
 
 Postman collection is included. Just update the URL to point to your API Gateway endpoint. The sls deploy command output will contain the endpoint.
 
-# Instructions
+## Instructions
 
 - Activate venv
 
